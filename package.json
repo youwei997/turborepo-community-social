@@ -6,6 +6,7 @@
   ],
   "scripts": {
     "dev": "turbo run dev",
+    "dev:ui-native": "turbo run dev --filter=./packages/ui... --filter=./apps/native...",
     "build": "turbo run build",
     "clean": "turbo run clean && rm -rf node_modules",
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\" --ignore-path .gitignore"
@@ -18,5 +19,8 @@
   "engines": {
     "node": ">=18"
   },
-  "name": "with-react-native-web"
+  "name": "with-react-native-web",
+  "dependencies": {
+    "@expo/vector-icons": "^14.1.0"
+  }
 }
