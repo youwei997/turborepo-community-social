@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View } from 'react-native';
 
-const HomeScreen: React.FC = () => {
+const TrendsHome: React.FC = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>动态页面</Text>
@@ -8,7 +8,7 @@ const HomeScreen: React.FC = () => {
   );
 };
 
-export default HomeScreen;
+export default TrendsHome;
 
 // 样式定义
 const styles = StyleSheet.create({
