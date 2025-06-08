@@ -6,7 +6,7 @@
   ],
   "scripts": {
     "dev": "turbo run dev",
-    "convex": "convex",
+    "convex": "convex dev",
     "dev:ui-native": "turbo run dev --filter=./packages/ui... --filter=./apps/native...",
     "dev:ui-admin": "turbo run dev --filter=./packages/ui... --filter=./apps/admin...",
     "native": "yarn workspace native",

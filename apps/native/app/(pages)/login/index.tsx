@@ -1,5 +1,5 @@
 import { Ionicons } from '@expo/vector-icons';
-import { api } from '@repo/convex/_generated/api';
+import { api } from '@repo/convex-service/_generated/api';
 import { useQuery } from 'convex/react';
 import { StatusBar } from 'expo-status-bar';
 import { useState } from 'react';

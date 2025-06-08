@@ -1,4 +1,4 @@
-import { api } from '@repo/convex/_generated/api';
+import { api } from '@repo/convex-service/_generated/api';
 import { useMutation, useQuery } from 'convex/react';
 import { Button, FlatList, StyleSheet, Text, View } from 'react-native';
 
