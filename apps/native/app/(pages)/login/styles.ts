@@ -1,0 +1,155 @@
+import { Platform, StyleSheet } from 'react-native';
+
+export default StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+  },
+  header: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingHorizontal: 15,
+    height: 56,
+  },
+  backButton: {
+    padding: 8,
+  },
+  placeholder: {
+    flex: 1,
+  },
+  formContainer: {
+    paddingHorizontal: 30,
+    paddingTop: 40,
+  },
+  title: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    color: '#666',
+    textAlign: 'left',
+    marginBottom: 40,
+  },
+  inputContainer: {
+    marginBottom: 10,
+  },
+  phoneContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    borderBottomWidth: 2,
+    borderBottomColor: '#e0e0e0',
+    paddingBottom: 8,
+  },
+  codeContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    borderBottomWidth: 2,
+    borderBottomColor: '#e0e0e0',
+    paddingBottom: 8,
+  },
+  inputFocused: {
+    borderBottomColor: '#FFB6B6',
+  },
+  countryCode: {
+    fontSize: 18,
+    color: '#333',
+    marginRight: 8,
+    fontWeight: '400',
+  },
+  input: {
+    flex: 1,
+    height: 45,
+    fontSize: 18,
+    color: '#333',
+    padding: 0,
+    textAlignVertical: 'center',
+    includeFontPadding: false,
+    lineHeight: 45,
+    backgroundColor: 'transparent',
+    borderWidth: 0,
+    ...(Platform.OS === 'web' ? { outlineStyle: 'none' } : {}),
+  },
+  codeInput: {
+    flex: 1,
+    height: 45,
+    fontSize: 18,
+    color: '#333',
+    padding: 0,
+    textAlignVertical: 'center',
+    includeFontPadding: false,
+    lineHeight: 45,
+    backgroundColor: 'transparent',
+    borderWidth: 0,
+    ...(Platform.OS === 'web' ? { outlineStyle: 'none' } : {}),
+  },
+  codeButton: {
+    backgroundColor: '#f5f5f5',
+    borderRadius: 18,
+    paddingVertical: 8,
+    paddingHorizontal: 12,
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: 36,
+  },
+  codeButtonText: {
+    color: '#666',
+    fontSize: 13,
+    fontWeight: '400',
+  },
+  loginButton: {
+    backgroundColor: '#FFB6B6',
+    borderRadius: 28,
+    height: 56,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginTop: 30,
+  },
+  loginButtonText: {
+    color: '#fff',
+    fontSize: 18,
+    fontWeight: '600',
+  },
+  footer: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    marginTop: 30,
+  },
+  footerText: {
+    color: '#666',
+    fontSize: 14,
+  },
+  footerDivider: {
+    color: '#ccc',
+    marginHorizontal: 12,
+  },
+  socialContainer: {
+    position: 'absolute',
+    bottom: 30,
+    left: 0,
+    right: 0,
+    alignItems: 'center',
+  },
+  socialDivider: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 25,
+    width: '70%',
+  },
+  dividerLine: {
+    flex: 1,
+    height: 1,
+    backgroundColor: '#e0e0e0',
+  },
+  dividerText: {
+    color: '#888',
+    paddingHorizontal: 12,
+    fontSize: 13,
+  },
+  agreement: {
+    color: '#bbb',
+    fontSize: 12,
+    textAlign: 'center',
+  },
+  agreementLink: {
+    color: '#FFB6B6',
+    textDecorationLine: 'none',
+  },
+});
