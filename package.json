@@ -8,7 +8,9 @@
     "dev": "turbo run dev",
     "convex": "convex",
     "dev:ui-native": "turbo run dev --filter=./packages/ui... --filter=./apps/native...",
+    "dev:ui-admin": "turbo run dev --filter=./packages/ui... --filter=./apps/admin...",
     "native": "yarn workspace native",
+    "admin": "yarn workspace admin",
     "build": "turbo run build",
     "clean": "turbo run clean && rm -rf node_modules",
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\" --ignore-path .gitignore"
@@ -16,6 +18,7 @@
   "devDependencies": {
     "convex": "latest",
     "prettier": "^3.1.1",
+    "supabase": "^2.24.3",
     "turbo": "^2.5.4"
   },
   "packageManager": "yarn@1.22.19",
