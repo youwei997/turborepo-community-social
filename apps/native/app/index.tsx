@@ -1,11 +1,13 @@
 import { Ionicons } from '@expo/vector-icons';
+import { api } from '@repo/convex/_generated/api';
+import { useQuery } from 'convex/react';
 import { StatusBar } from 'expo-status-bar';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Platform, SafeAreaView, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
 
 export default function Native() {
-  // const topics = useQuery(api.topics.get);
-  // console.log(topics);
+  const topics = useQuery(api.topics.get);
+  console.log(topics);
   const [phoneInputFocused, setPhoneInputFocused] = useState(false);
   const [codeInputFocused, setCodeInputFocused] = useState(false);
   const [codeBtnDisabled, setCodeBtnDisabled] = useState(false);

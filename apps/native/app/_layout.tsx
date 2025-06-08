@@ -1,6 +1,6 @@
-import { Stack } from 'expo-router';
-import { ConvexProvider, ConvexReactClient } from "convex/react";
 import { CONVEX_URL } from '@env';
+import { ConvexProvider, ConvexReactClient } from 'convex/react';
+import { Stack } from 'expo-router';
 const convex = new ConvexReactClient(CONVEX_URL as string);
 
 const AppLayout = () => {
