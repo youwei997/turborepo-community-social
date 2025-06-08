@@ -9,6 +9,7 @@
     "convex": "convex dev",
     "dev:ui-native": "turbo run dev --filter=./packages/ui... --filter=./apps/native...",
     "dev:ui-admin": "turbo run dev --filter=./packages/ui... --filter=./apps/admin...",
+    "dev:all": "concurrently \"npm:convex\" \"npm:dev:ui-native\"",
     "native": "yarn workspace native",
     "admin": "yarn workspace admin",
     "build": "turbo run build",
@@ -25,5 +26,8 @@
   "engines": {
     "node": ">=18"
   },
-  "name": "turborepo-community-social"
+  "name": "turborepo-community-social",
+  "dependencies": {
+    "concurrently": "^9.1.2"
+  }
 }
