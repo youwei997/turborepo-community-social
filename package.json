@@ -7,11 +7,14 @@
   "scripts": {
     "dev": "turbo run dev",
     "convex": "convex dev",
+    "supabase:start": "yarn workspace @repo/supabase-service start",
+    "supabase:stop": "yarn workspace @repo/supabase-service stop",
     "dev:ui-native": "turbo run dev --filter=./packages/ui... --filter=./apps/native...",
     "dev:ui-admin": "turbo run dev --filter=./packages/ui... --filter=./apps/admin...",
-    "dev:all": "concurrently \"npm:convex\" \"npm:dev:ui-native\"",
-    "native": "yarn workspace native",
-    "admin": "yarn workspace admin",
+    "dev:convex-native": "concurrently \"npm:convex\" \"npm:dev:ui-native\"",
+    "dev:supabase-admin": "concurrently \"npm:supabase:start\" \"npm:dev:ui-admin\"",
+    "dev:native": "yarn workspace native",
+    "dev:admin": "yarn workspace admin",
     "build": "turbo run build",
     "clean": "turbo run clean && rm -rf node_modules",
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\" --ignore-path .gitignore"

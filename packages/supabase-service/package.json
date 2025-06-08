@@ -1,0 +1,13 @@
+{
+  "name": "@repo/supabase-service",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "supabase start",
+    "stop": "supabase stop",
+    "build": "supabase gen types typescript --local > ./types/supabase.ts"
+  },
+  "devDependencies": {
+    "supabase": "^2.24.3"
+  }
+}
