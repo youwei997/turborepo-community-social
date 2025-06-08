@@ -12,7 +12,11 @@ export default function TabLayout() {
       screenOptions={{
         tabBarStyle: {
           height: Platform.OS === 'ios' ? 90 : 60,
-          paddingBottom: Platform.OS === 'ios' ? 30 : 10,
+          paddingBottom: Platform.OS === 'ios' ? 30 : 0,
+        },
+        tabBarLabelStyle: {
+          // 这个地方是 Tabs.Screen 下的a标签 justify-content: flex-start; 导致，不知道怎么改先这样
+          marginTop: 5,
         },
       }}
     >
