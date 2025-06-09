@@ -5,7 +5,7 @@
   "scripts": {
     "start": "supabase start",
     "stop": "supabase stop",
-    "build": "supabase gen types typescript --local > ./types/supabase.ts"
+    "build": "supabase gen types typescript --local > ./supabase.ts"
   },
   "devDependencies": {
     "supabase": "^2.24.3"

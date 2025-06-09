@@ -9,10 +9,11 @@
     "convex": "convex dev",
     "supabase:start": "cd packages/supabase-service && yarn start",
     "supabase:stop": "cd packages/supabase-service && yarn stop",
+    "supabase:build": "cd packages/supabase-service && yarn build",
     "dev:ui-native": "turbo run dev --filter=./packages/ui... --filter=./apps/native...",
     "dev:ui-admin": "turbo run dev --filter=./packages/ui... --filter=./apps/admin...",
-    "dev:convex-native": "concurrently \"npm:convex\" \"npm:dev:ui-native\"",
-    "dev:supabase-admin": "concurrently \"npm:supabase:start\" \"npm:dev:ui-admin\"",
+    "dev:convex-native": "concurrently \"npm:convex\" \"npm:supabase:build\" \"npm:dev:ui-native\"",
+    "dev:supabase-admin": "concurrently \"npm:supabase:start\" \"npm:supabase:build\" \"npm:dev:ui-admin\"",
     "native": "yarn workspace native",
     "admin": "yarn workspace admin",
     "build": "turbo run build",
@@ -20,11 +21,11 @@
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\" --ignore-path .gitignore"
   },
   "devDependencies": {
+    "concurrently": "^9.1.2",
     "convex": "latest",
     "prettier": "^3.1.1",
     "supabase": "^2.24.3",
-    "turbo": "^2.5.4",
-    "concurrently": "^9.1.2"
+    "turbo": "^2.5.4"
   },
   "packageManager": "yarn@1.22.19",
   "engines": {
