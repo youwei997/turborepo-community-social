@@ -11,6 +11,8 @@
     "eject": "expo eject"
   },
   "dependencies": {
+    "convex": "^1.24.8",
+    "@supabase/supabase-js": "^2.50.0",
     "@expo/vector-icons": "^14.1.0",
     "@repo/convex-service": "*",
     "@repo/ui": "*",

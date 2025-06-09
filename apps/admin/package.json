@@ -10,7 +10,9 @@
     "lint": "eslint \"src/**/*.ts\""
   },
   "dependencies": {
+    "convex": "^1.24.8",
     "@repo/ui": "*",
+    "@supabase/supabase-js": "^2.50.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },
